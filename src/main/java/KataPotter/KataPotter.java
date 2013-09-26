@@ -2,11 +2,27 @@ package KataPotter;
 
 public class KataPotter {
 
-	public int Canasta;
+	private int[] Canasta;
+	private int PrecioTotal;
 
-	public Object PrecioCanasta() {
+	public Object PrecioCanasta() 
+	{
+		return PrecioTotal;
+	}
+
+	public void AniadirLibroACanastaDeCompras(int libro) 
+	{
+		Canasta = new int[10];
 		
-		return 0;
+		if(Canasta.length == 0)
+		{
+			PrecioTotal = 0;
+		}
+		else
+		{
+			Canasta[0]=libro;
+			PrecioTotal = 8;
+		}
 	}
 
 }
